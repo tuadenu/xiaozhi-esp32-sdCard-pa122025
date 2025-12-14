@@ -1,4 +1,4 @@
-# Xiaozhi ESP32 - Phiên bản Việt Nam
+# Xiaozhi ESP32 - Phiên bản Việt Nam -  Series Đồ chơi cho Phương Anh 098683806
 
 <div style="display: flex; justify-content: space-between;>
 
@@ -14,15 +14,7 @@
 
 Tham gia cộng đồng Xiaozhi AI-IoT Vietnam để nhận hỗ trợ, chia sẻ kinh nghiệm và cập nhật tính năng mới:
 
-| Nền tảng | Link | Mô tả |
-|----------|------|-------|
-| 📱 **Zalo** | [Tham gia nhóm](https://zalo.me/g/fsyuiz890) | Nhóm hỗ trợ chính thức |
-| 📘 **Facebook** | [Tham gia nhóm](https://www.facebook.com/share/1BhraxqFBb/?mibextid=wwXIfr) | Cộng đồng Facebook |
-| 🎥 **YouTube** | [Xem hướng dẫn](https://youtu.be/g7Lh-LpxElU) | Video build chi tiết |
-| 🔧 **Web Flasher** | [Nạp ROM Online](https://tienhuyiot.github.io/esp_web_flasher/) | Nạp firmware không cần cài đặt |
-
----
-
+|
 ## 📖 Giới Thiệu
 
 **Xiaozhi ESP32 Vietnam** là phiên bản tùy chỉnh của dự án Xiaozhi AI Chatbot, được phát triển đặc biệt cho cộng đồng Việt Nam với nhiều tính năng bổ sung và tối ưu hóa cho thị trường Việt.
@@ -56,24 +48,9 @@ Dự án này được fork và phát triển từ [xiaozhi-esp32](https://githu
 
 ### 🔄 Cập Nhật & Triển Khai
 
-#### Hệ Thống OTA online
-- Cập nhật firmware qua mạng (Over-The-Air)
-- Link OTA: [https://ota-server.xiaozhi-ota.workers.dev/ota/](https://ota-server.xiaozhi-ota.workers.dev/ota/)
-- Không cần kết nối dây, cập nhật từ xa
 
-#### Hệ Thống OTA WebServer
-- Cập nhật firmware qua Web Server
-- Truy cập link bằng IP kết nối mang: Ví dụ 102.168.1.10/ota
-<div style="display: flex; justify-content: space-between;">
-  <a href="docs/images/02_Xingzhi_Cube.jpg" target="_blank" title="Xingzhi Cube 1.54tft Board">
-    <img src="docs/images/04_ota_server.png" width="480" />
-  </a>
-</div>
 
-#### Nạp ROM Dễ Dàng
-- Nạp ROM trực tiếp qua trình duyệt web
-- Link Web Flasher: [https://tienhuyiot.github.io/esp_web_flasher/](https://tienhuyiot.github.io/esp_web_flasher/)
-- Không cần cài đặt driver hay công cụ phức tạp
+
 
 ### 🤖 Hỗ Trợ Phần Cứng:
 
@@ -115,7 +92,7 @@ Các tính năng sau đây đang được phát triển tích cực và sẽ đ�
 
 | Tính năng | Mô tả | Trạng thái |
 |-----------|-------|------------|
-| 💾 **Play music from SD card** | Phát nhạc trực tiếp từ thẻ nhớ SD | ✅ https://github.com/NTC95-Xiaozhi-Esp32/Xiaozhi-NTC-SDCARD |
+| 💾 **Play music from SD card** | Phát nhạc trực tiếp từ thẻ nhớ SD | 🔨 Đang phát triển |
 | 🎬 **Play video from SD** | Phát video từ thẻ nhớ SD trên màn hình LCD | 🔨 Đang phát triển |
 | 🔊 **Phát nhạc qua Bluetooth** | Kết nối và phát nhạc qua loa Bluetooth | 🔨 Đang phát triển |
 
@@ -196,10 +173,6 @@ Các tính năng sau đây đang được phát triển tích cực và sẽ đ�
 
 ### Cho Người Dùng Cuối
 
-1. **Nạp Firmware Online**
-   - Truy cập: [https://tienhuyiot.github.io/esp_web_flasher/](https://tienhuyiot.github.io/esp_web_flasher/)
-   - Kết nối ESP32 qua USB
-   - Chọn firmware và nhấn Flash
 
 2. **Cấu Hình WiFi**
    - Bật thiết bị
@@ -220,13 +193,7 @@ Các tính năng sau đây đang được phát triển tích cực và sẽ đ�
 
 #### Build Từ Source
 
-```bash
-# Clone repository
-git clone https://github.com/TienHuyIoT/xiaozhi-esp32_vietnam.git
-cd xiaozhi-esp32_vietnam
 
-# Checkout nhánh develop_vn
-git checkout develop_vn
 
 # Cài đặt ESP-IDF dependencies
 # (Theo hướng dẫn của ESP-IDF)
@@ -240,38 +207,7 @@ idf.py -p COM_PORT flash monitor
 
 ---
 
-## 📚 Tài Liệu
-
-### Tài Liệu Người Dùng
-- 🎥 [Video Hướng Dẫn Build](https://youtu.be/g7Lh-LpxElU)
-- 📖 [Hướng Dẫn Nạp Firmware](https://ccnphfhqs21z.feishu.cn/wiki/Zpz4wXBtdimBrLk25WdcXzxcnNS)
-
-### Tài Liệu Kỹ Thuật
-- [Hướng dẫn bo mạch tùy chỉnh](docs/custom-board.md)
-- [Giao thức MCP - Hướng dẫn sử dụng](docs/mcp-usage.md)
-- [Giao thức MCP - Quy trình tương tác](docs/mcp-protocol.md)
-- [Tài liệu MQTT + UDP](docs/mqtt-udp.md)
-- [Tài liệu WebSocket](docs/websocket.md)
-
----
-
-## 🤝 Đóng Góp
-
-Chúng tôi rất hoan nghênh mọi đóng góp! Vui lòng:
-
-1. Fork repository này
-2. Tạo branch mới (`git checkout -b feature/TenTinhNang`)
-3. Commit thay đổi (`git commit -m 'Thêm tính năng mới'`)
-4. Push lên branch (`git push origin feature/TenTinhNang`)
-5. Tạo Pull Request
-
-### Quy Tắc Đóng Góp
-- Tuân thủ Google C++ Style Guide
-- Viết commit message rõ ràng bằng tiếng Việt hoặc tiếng Anh
-- Test kỹ trước khi tạo PR
-
----
-
+#
 ## 📄 Giấy Phép
 
 Dự án này được phát hành dưới giấy phép **MIT License**, kế thừa từ dự án gốc xiaozhi-esp32.
@@ -301,12 +237,7 @@ Bạn có thể:
 
 ## 📞 Liên Hệ
 
-- 📱 **Zalo Group**: [https://zalo.me/g/fsyuiz890](https://zalo.me/g/fsyuiz890)
-- 📘 **Facebook Group**: [https://www.facebook.com/share/1BhraxqFBb/](https://www.facebook.com/share/1BhraxqFBb/)
-- 💻 **GitHub Issues**: [Tạo issue mới](https://github.com/TienHuyIoT/xiaozhi-esp32_vietnam/issues)
-
----
-
+098683806
 <div align="center">
 
 **Made with ❤️ by Vietnam AI-IoT Community**
